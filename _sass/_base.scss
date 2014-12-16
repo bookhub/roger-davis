@@ -1,3 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400,700);
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /**
  * Reset some basic elements
  */
@@ -7,8 +15,6 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-
-
 
 /**
  * Basic styling
@@ -22,7 +28,6 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
 
 
 /**
@@ -106,7 +111,6 @@ a {
 
 /**
  * Blockquotes
- */
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -119,6 +123,7 @@ blockquote {
         margin-bottom: 0;
     }
 }
+*/
 
 
 
@@ -151,9 +156,9 @@ pre {
 
 
 /**
- * Wrapper
+ * `Wrapper`
  */
-.wrapper {
+%wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -170,6 +175,9 @@ pre {
     }
 }
 
+.wrapper {
+  @extend %wrapper;
+}
 
 
 /**
