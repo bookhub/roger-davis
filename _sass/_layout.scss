@@ -1,4 +1,9 @@
-$red: #ff0000;
+$red: #c0392b;
+$white: #ecf0f1;
+$black: darken(#2c3e50,15%);
+$gray: #7f8c8d;
+$light-gray: #bdc3c7;
+
 $nav-vertical-pad: 0.5em;
 $vertical-pad: 1.5em;
 
@@ -6,8 +11,8 @@ $serif: 'Times New Roman', serif;
 $sans-serif: 'Montserrat', sans-serif;
 
 footer.site-footer {
-  background-color: #ccc;
-  color: #333;
+  background-color: $light-gray;
+  color: $gray;
   text-align: right;
   padding-top: $nav-vertical-pad*2;
   padding-bottom: $nav-vertical-pad*2;
@@ -22,13 +27,14 @@ footer.site-footer {
     padding-bottom: 6px;
   }
   h2 {
-    .title { color: #000; border-bottom: 1px solid #aaa; }
+    .title { color: $black; border-bottom: 1px solid darken($light-gray,30%); }
+    .author { font-size: 0.8em; color: $black; }
   }
-  h3 { color: #888; font-size: 11px; }
+  h3 { color: $gray; font-size: 11px; }
 }
 
 header {
-  background-color: #000;
+  background-color: $black;
   text-align: center;
   h1 {
     color: $red;
@@ -47,8 +53,8 @@ nav.fixed {
 }
 
 nav {
-  background-color: #fff;
-  
+  background-color: $white;
+
   position: absolute;
   left: 0;
   right: 0;
@@ -71,15 +77,15 @@ nav {
       text-align: center;
       a, a:active, a:visited {
         font-size: 1.6em;
-        color: #666;
+        color: $gray;
         &:hover {
-          color: #000;
+          color: $black;
           text-decoration: none;
-          border-bottom: 4px solid #ccc;
+          border-bottom: 4px solid $light-gray;
         }
         &.active {
           color: $red;
-          border-bottom: 4px solid #000;
+          border-bottom: 4px solid $black;
         }
       }
     }
@@ -101,8 +107,8 @@ section {
     font-family: $serif;
     margin-bottom: $vertical-pad;
     footer {
-      strong { color: #000; font-size: 1.5em; }
-      color: #888;
+      strong { color: $black; font-size: 1.5em; }
+      color: darken($gray,10%);
       display: block;
       padding-top: $vertical-pad;
       padding-left: 4em;
@@ -130,14 +136,14 @@ section {
     padding: 0px;
   }
   &.light {
-    background-clor: #fff;
-    h1 { color: #000; }
-    p { color: #333; }
+    background-clor: $white;
+    h1 { color: $black; }
+    p { color: $gray; }
   }
   &.dark {
-    background-color: #000;
+    background-color: $black;
     h1 { color: $red; text-align: right; }
-    h2 { color: #aaa; }
-    p { color: #fff; }
+    h2 { color: $light-gray; }
+    p { color: $white; }
   }
 }
