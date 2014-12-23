@@ -3,9 +3,8 @@
 </header>
 <nav>
   <ul>
-    <li><a href="#the-book" class='active' data-scroll='the-book'>The Book</a></li>
-    <li><a href="#the-author" data-scroll='the-author'>The Author</a></li>
-    <li><a href="#the-buzz" data-scroll='the-buzz'>The Buzz</a></li>
-    <li><a href="#buy" data-scroll='buy'>Where to Buy</a></li>
+    {% for section in site.sections %}
+      <li><a href='#{{section[0]}}' data-scroll='{{section[0]}}'>{{section[1].nav_item_name}}</a></li>
+    {% endfor %}
   </ul>
 </nav>

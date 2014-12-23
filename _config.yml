@@ -1,7 +1,7 @@
 # Site settings
 book_author: Roger C. Davis
 book_title: Wall Street's Just Not That Into you
-
+url: http://rogercdavis.com
 title: Roger C. Davis — Wall Street's Just Not That Into you
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -10,9 +10,42 @@ description: > # this means to ignore newlines until "baseurl:"
   Davis delivers a dynamic and deadly accurate analysis of Wall Street’s
   “one-size-fits-all” approach—and why even wealthy investors should be wary.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://rogercdavis.com" # the base hostname & protocol for your site
+addthis_publisher_id: ra-54992d543ea23170
+
+sections:
+
+  about_the_book:
+    nav_item_name: The Book
+    header: About the Book
+    paragraphs:
+      - In his new book, Roger Davis tells his readers point-blank <em>Wall Street’s Just Not That Into You</em>. Drawing on an investment career spanning more than two decades, Davis delivers a dynamic and deadly accurate analysis of Wall Street’s “one-size-fits-all” approach—and why even wealthy investors should be wary.
+      - Davis shares his considerable financial experience with his readers. He raises valid questions about traditional investment techniques such as portfolio diversification, exposing the inherent dangers of relying on any one technique as a primary risk management tool. As a reader, you will be taught critical, innovative strategies like how to stress test your portfolio and “lose your losers.”
+      - "A refreshing change-of-pace from the many books glorifying the buy-and-hold mentality—most of which are authored, promoted, and proselytized by Wall Street—<em>Wall Street’s Just Not That Into You</em> offers a bold and thought-provoking alternative. Let Roger Davis show you how to keep your money safe and protected so that your wealth will fulfill its true purpose: funding the life you want to live."
+
+  about_the_author:
+    nav_item_name: The Author
+    header: About the Author
+    paragraphs:
+      - "Mississippi native Roger C. Davis has been in the financial services business for more than twenty years.  He has worked at some of the largest financial institutions in the world, run an independent registered investment advisory firm and is the general partner of a hedge fund."
+      - "Roger has a BBA from University of Mississippi and he spent years in the trenches at various large Wall Street firms. It was his time there that led him to envision systems for growing and protecting wealth that aren’t wholly reliant on a rising stock market."
+      - "Roger lives in Los Angeles, CA with his wife and two children."
+
+  the_buzz:
+    nav_item_name: The Buzz
+    header: What People Are Saying
+    quotes:
+      - quote: If you have money in the market, you should read this book.
+        author: Keith Ferrazzi
+        author_description: "author of the #1 NY Times Bestseller <em>Never Eat Alone and Who's Got Your Back</em>"
+      - quote: In his book <em>Wall Street’s Just Not That Into You</em>, Roger Davis outlines an insightful approach to investing and to life.  He starts with the premise that your stocks, bonds, and other investments don’t know you own them, and he explores successful strategies to adapt to that reality.
+        author: Ambassador Frank Baxter
+        author_description: Former CEO of Jeffries and Company
+
+  where_to_buy:
+    nav_item_name: Where to Buy
+    header: Where to Buy
+    coming_soon_text: Coming soon!
 
 # Build settings
 markdown: kramdown
