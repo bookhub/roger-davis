@@ -46,7 +46,7 @@ sections:
   where_to_buy:
     nav_item_name: Where to Buy
     header: Where to Buy
-    coming_soon_text: Coming Soon in April 2015!
+    coming_soon_text: Coming soon in the Fall of 2015.
 
 # Build settings
 markdown: kramdown
